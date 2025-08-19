@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cgflix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+  .shadow-white {
+    box-shadow: #1de5ff 0 2px 12px 0;
+}
+</style>
+
+<style>
+    .shadow-blue {
+        box-shadow: #1e75e7 0 2px 18px 0;
+    }
+</style>
+
+</head>
+<body class="bg-black text-white">
+
+  <nav class="flex justify-between items-center px-6 py-3 border-b border-blue-600 bg-[#0a0a0f] shadow-white">
+    <img src="Logo cgflix lagi 1.png" alt=""class="w-15 h-12">
+    <div class="flex items-center gap-4 text-sm sm:text-base">
+      <div class="flex items-center gap-1 cursor-pointer hover:text-blue-400 gap-2">
+        <span class="font-bold">EN</span>
+        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 24" >
+          <path gap-2 stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+        <div class="w-[2px] h-6 bg-blue-500 shadow-white rounded-full"></div>
+      </div>
+      <a href="#" class="hover:text-blue-700 transition">Sign in</a>
+      <div class="w-[2px] h-6 bg-blue-500 shadow-white rounded-full"></div>
+      <a href="#" class="hover:text-blue-700 transition">Sign up</a>
+    </div>
+  </nav>
+
+  <!-- awal -->
+    <div class="relative w-full h-screen overflow-hidden shadow-blue">
+        <!-- Background posters grid (semi-transparent) -->
+        <div class="absolute inset-0 grid grid-cols-5 gap-2 opacity-20">
+            <img src="Horror Movies Based on True Events.jfif" alt="">
+            <img src="Disney Pixar Toy Story 4 - Store Wall Poster (1).jfif" alt="">
+            <img src="Twenty five twenty one (1).jfif" alt="">
+            <img src="The Commitment.jfif" alt="">
+            <img src="Разблокированный _ Unlocked 2023.jfif" alt="">
+            <img src="Sing 2.jfif" alt="">
+            <img src="Movie Poster Design in Photoshop Full tutorial.jfif" alt="">
+            <img src="Dua Garis Biru (2019).jfif" alt="">
+            <img src="Ratatouille 2007.jfif" alt="">
+            <img src="Money Heist.jfif" alt="">
+        </div>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <div class="mb-8">
+                <h1 class="text-5xl font-bold flex items-center">
+                    <img src="Logo cgflix lagi 1.png" alt="">
+                    <span class="text-white">flix</span>
+                </h1>
+            </div>
+
+            <!-- Movie poster showcase -->
+            <div class="flex justify-center items-center gap-2 mb-12">
+                <img src="0eca5f13-4f1c-4f2f-b557-6946cfcd5a7d.jfif" alt="" class="w-32 h-48 bg-gray-800 rounded-md shadow-lg transform -rotate-6 border-2 border-blue-500 shadow-blue-500/50">
+                <img src="00c71a6f-be7a-47da-af49-9cc1f69f415f.jfif" alt="" class="w-36 h-56 bg-gray-800 rounded-md shadow-lg transform -rotate-2 border-2 border-blue-500 shadow-blue-500/50">
+                <img src="Attack on Titan WALLPAPER.jfif" alt="" class="w-44 h-64 bg-gray-800 rounded-md shadow-lg z-10 border-2 border-blue-500 shadow-blue-500/50">
+                <img src="Vincenzo.jfif" alt="" class="w-36 h-56 bg-gray-800 rounded-md shadow-lg transform rotate-2 border-2 border-blue-500 shadow-blue-500/50">
+                <img src="a88731c1-6021-49ef-93e3-13456d5e4584.jfif" alt="" class="w-32 h-48 bg-gray-800 rounded-md shadow-lg transform rotate-6 border-2 border-blue-500 shadow-blue-500/50">
+            </div>
+
+            <div class="text-center mb-6">
+                <p class="text-white text-xl">
+                    Only <span class="font-bold">Rp.45.000/month</span> you can enjoy various movies and cancel anytime
+                </p>
+            </div>
+
+            <div class="mt-4">
+                <button class="bg-gradient-to-br from-blue-700 to-red-900 hover:from-blue-900 hover:to-pink-500 text-white px-8 py-3 rounded-full flex items-center">
+                    Subscribe Now
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- kedua -->
+    
+<style>
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    /* Custom gradients and backgrounds */
+    .bg-main {
+        background-color: #0c0c16;
+    }
+    
+    .bg-card-1 {
+        background: linear-gradient(to bottom, #080050, #26316e);
+    }
+    .bg-card-2 {
+        background: linear-gradient(to top, #010a3d, #4824a3);
+    }
+    .bg-card-3 {
+        background: linear-gradient(to bottom, #010a3d, #0205a5);
+    }
+    .bg-card-4 {
+        background: linear-gradient(to top, #422080, #010a3d);
+    }
+    
+    .icon-globe {
+        background: radial-gradient(circle at center, #ff8e55, #d35200);
+    }
+    .icon-tv {
+        background: linear-gradient(#727cff, #1d78ff);
+    }
+    .icon-download {
+        background: linear-gradient(#ffffff, #ffffff);
+    }
+    .icon-bell {
+        background: radial-gradient(circle at center, #ff7e7e, #ff3939);
+    }
+
+    /* Slide down animation */
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    .slide-down {
+        animation: slideDown 0.5s ease-out forwards;
+    }
+    
+    .slide-delay-1 {
+        animation-delay: 0.1s;
+    }
+    
+    .slide-delay-2 {
+        animation-delay: 0.2s;
+    }
+    
+    .slide-delay-3 {
+        animation-delay: 0.3s;
+    }
+    
+    .slide-delay-4 {
+        animation-delay: 0.4s;
+    }
+</style>
+
+
+    <div class="max-w-5xl mx-auto px-4 py-8" >
+        <h2 class="text-xl font-bold mb-6 slide-down">More Reasons to Join</h2>
+        
+        <!-- Mobile Slider with Frame 4 -->
+        <div class="relative">
+            <div class="absolute top-2 left-2 bg-black bg-opacity-60 text-white px-2 py-0.5 rounded text-xs z-10"></div>
+            
+            <div id="first-slider" class="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8">
+                <!-- Card 1 -->
+                <div class="min-w-[220px] h-48 bg-card-1 p-4 rounded-lg flex-shrink-0 snap-center slide-down slide-delay-1">
+                    <h3 class="text-base font-semibold mb-1">Watch Everywhere</h3>
+                    <p class="text-xs text-gray-300 mb-3">Stream unlimited movies on your phone, tablet, laptop and TV</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <div class="w-20 h-20 rounded-full flex items-center justify-center overflow-hidden">
+                            <!-- Globe Icon/Image -->
+                            <div class="w-full h-full icon-globe rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="min-w-[220px] h-48 bg-card-2 p-4 rounded-lg flex-shrink-0 snap-center slide-down slide-delay-2">
+                    <h3 class="text-base font-semibold mb-1">Enjoy on your TV</h3>
+                    <p class="text-xs text-gray-300 mb-3">Watch on Smart TV, Chromecast, Apple TV, Blu-ray players, and more</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <div class="w-20 h-20 rounded-full flex items-center justify-center overflow-hidden">
+                            <!-- TV Icon -->
+                            <div class="w-full h-full icon-tv rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                                    <polyline points="17 2 12 7 7 2"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="min-w-[220px] h-48 bg-card-3 p-4 rounded-lg flex-shrink-0 snap-center slide-down slide-delay-3">
+                    <h3 class="text-base font-semibold mb-1">Download your show</h3>
+                    <p class="text-xs text-gray-300 mb-3">Save your favorites and watch them whenever you want</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <div class="w-20 h-20 rounded-full flex items-center justify-center overflow-hidden">
+                            <!-- Download Icon -->
+                            <div class="w-full h-full icon-download rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="min-w-[220px] h-48 bg-card-4 p-4 rounded-lg flex-shrink-0 snap-center slide-down slide-delay-4">
+                    <h3 class="text-base font-semibold mb-1">Smart reminders</h3>
+                    <p class="text-xs text-gray-300 mb-3">Get notifications for new seasons, episodes and more</p>
+                    <div class="flex items-center justify-center mt-2">
+                        <div class="w-20 h-20 rounded-full flex items-center justify-center overflow-hidden">
+                            <!-- Bell Icon -->
+                            <div class="w-full h-full icon-bell rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dots indicator with slide down animation -->
+            <div class="flex justify-center gap-2 mt-6 slide-down" style="animation-delay: 0.5s;">
+                <button onclick="goToSlide(0)" class="dot w-4 h-2 rounded-full bg-white transition-all duration-300" data-index="0"></button>
+                <button onclick="goToSlide(1)" class="dot w-2 h-2 rounded-full bg-gray-600 transition-all duration-300" data-index="1"></button>
+                <button onclick="goToSlide(2)" class="dot w-2 h-2 rounded-full bg-gray-600 transition-all duration-300" data-index="2"></button>
+                <button onclick="goToSlide(3)" class="dot w-2 h-2 rounded-full bg-gray-600 transition-all duration-300" data-index="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Slider functionality
+        let currentSlide = 0;
+        const slider = document.getElementById('first-slider');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = 4;
+        
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('bg-white', 'w-4');
+                    dot.classList.remove('bg-gray-600', 'w-2');
+                } else {
+                    dot.classList.add('bg-gray-600', 'w-2');
+                    dot.classList.remove('bg-white', 'w-4');
+                }
+            });
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            const scrollAmount = currentSlide * (220 + 16); // card width + gap
+            slider.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+            updateDots();
+        }
+        
+        // Detect scroll events to update dots
+        slider.addEventListener('scroll', () => {
+            const scrollPosition = slider.scrollLeft;
+            const cardWidth = 220 + 16; // card width + gap
+            const newIndex = Math.round(scrollPosition / cardWidth);
+            
+            if (newIndex !== currentSlide && newIndex < totalSlides) {
+                currentSlide = newIndex;
+                updateDots();
+            }
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
+
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .bg-main {
+            background-color: #0a0a14;
+        }
+        
+        .poster-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
+        }
+        
+        .nav-button {
+            background-color: rgba(59, 130, 246, 0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-button:hover {
+            background-color: rgba(37, 99, 235, 1);
+        }
+    </style>
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">Trending Now</h2>
+            <div class="flex gap-2">
+                <span id="current-slide" class="text-sm text-gray-400">1</span>
+                <span class="text-sm text-gray-400">/</span>
+                <span id="total-slides" class="text-sm text-gray-400">5</span>
+            </div>
+        </div>
+        
+        <!-- Slider Container -->
+        <div class="relative group">
+            <!-- Left Navigation Arrow -->
+            <button id="poster-prev-btn" class="nav-button absolute left-0 top-1/2 -translate-y-1/2 w-8 h-14 rounded-r-lg z-10 hidden group-hover:flex items-center justify-center focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            
+            <div id="poster-slider-container" class="overflow-hidden">
+                <div id="poster-slider" class="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar py-2">
+                    <!-- Poster 1 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-1">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="1d792717-eed6-4aeb-80d2-aabd5597130e.jfif" alt="When The Phone Rings" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romance Mistery</p>
+                                <h3 class="text-sm font-semibold">When The Phone Rings</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 2 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-2">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="Perayaan Mati Rasa.jfif" alt="Perayaan Mati Rasa" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Drama</p>
+                                <h3 class="text-sm font-semibold">Perayaan Mati Rasa</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 3 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-3">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="love next door (1).jfif" alt="Love Next Door" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romcom</p>
+                                <h3 class="text-sm font-semibold">Love Next Door</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 4 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-4">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="Twenty five twenty one (1).jfif" alt="Twenty Five Twenty One" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romcom</p>
+                                <h3 class="text-sm font-semibold">Twenty Five Twenty One</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 5 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-5">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="Nevertheless K-drama Official poster Netflix (1).jfif" alt="Nevertheless" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romance</p>
+                                <h3 class="text-sm font-semibold">Nevertheless</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 6 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-6">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="마이네임 (my name).jfif" alt="My Name" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Laga</p>
+                                <h3 class="text-sm font-semibold">My Name</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 7 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-7">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="SNOWDROP POSTER.jfif" alt="Snowdrop" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romance</p>
+                                <h3 class="text-sm font-semibold">Snowdrop</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 8 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-8">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="4d8f8fa4-23b1-4979-809f-9cbffb5ab9fd.jfif" alt="Week Hero Class 1" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Bromance</p>
+                                <h3 class="text-sm font-semibold">Week Hero Class 1</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 9 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-9">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="Crítica_ HAPPINESS (HAEPINISEU) _ 2021.jfif" alt="Happiness" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Laga-Romance</p>
+                                <h3 class="text-sm font-semibold">Happiness</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Poster 10 -->
+                    <div class="min-w-[180px] h-64 rounded-lg flex-shrink-0 snap-center relative overflow-hidden poster-10">
+                        <div class="poster-gradient absolute bottom-0 left-0 right-0 h-20 flex items-end p-3">
+                            <div class="text-white">
+                                <img src="Queen of Tears KDrama Poster.jfif" alt="Queen Of Tears" class="rounded-md bg-card-4 rounded-t">
+                                <p class="text-xs opacity-80">Romcom</p>
+                                <h3 class="text-sm font-semibold">Queen Of Tears</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Navigation Arrow -->
+            <button id="poster-next-btn" class="nav-button absolute right-0 top-1/2 -translate-y-1/2 w-8 h-14 rounded-l-lg z-10 hidden group-hover:flex items-center justify-center focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Indicator Dots -->
+        <div class="flex justify-center gap-1 mt-4">
+            <button class="poster-dot w-8 h-1 rounded-full bg-blue-500 transition-all duration-300" data-index="0"></button>
+            <button class="poster-dot w-8 h-1 rounded-full bg-gray-600 transition-all duration-300" data-index="1"></button>
+            <button class="poster-dot w-8 h-1 rounded-full bg-gray-600 transition-all duration-300" data-index="2"></button>
+            <button class="poster-dot w-8 h-1 rounded-full bg-gray-600 transition-all duration-300" data-index="3"></button>
+            <button class="poster-dot w-8 h-1 rounded-full bg-gray-600 transition-all duration-300" data-index="4"></button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Slider functionality untuk slider poster
+            let posterCurrentSlide = 0;
+            const posterSlider = document.getElementById('poster-slider');
+            const posterDots = document.querySelectorAll('.poster-dot');
+            const posterPrevBtn = document.getElementById('poster-prev-btn');
+            const posterNextBtn = document.getElementById('poster-next-btn');
+            const visiblePosters = 3; // Jumlah poster yang terlihat sekaligus (tergantung ukuran layar)
+            const totalPosters = 10;
+            const totalPages = Math.ceil(totalPosters / visiblePosters);
+            const currentSlideElement = document.getElementById('current-slide');
+            const totalSlidesElement = document.getElementById('total-slides');
+            const posterWidth = 180 + 16; // lebar poster + gap
+            
+            // Inisialisasi total slides
+            if (totalSlidesElement) {
+                totalSlidesElement.textContent = totalPages.toString();
+            }
+            
+            function updatePosterDots() {
+                const pageIndex = Math.floor(posterCurrentSlide / visiblePosters);
+                posterDots.forEach((dot, index) => {
+                    if (index === pageIndex) {
+                        dot.classList.add('bg-blue-500');
+                        dot.classList.remove('bg-gray-600');
+                    } else {
+                        dot.classList.add('bg-gray-600');
+                        dot.classList.remove('bg-blue-500');
+                    }
+                });
+            }
+            
+            function updateSlideCounter() {
+                if (currentSlideElement) {
+                    const currentPage = Math.floor(posterCurrentSlide / visiblePosters) + 1;
+                    currentSlideElement.textContent = currentPage.toString();
+                }
+            }
+            
+            function goToPosterSlide(index) {
+                // Hitung posisi awal poster untuk halaman ini
+                const targetPosters = index * visiblePosters;
+                posterCurrentSlide = Math.min(targetPosters, totalPosters - visiblePosters);
+                
+                // Hitung posisi scroll yang tepat
+                const scrollAmount = posterCurrentSlide * posterWidth;
+                
+                posterSlider.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                updatePosterDots();
+                updateSlideCounter();
+            }
+            
+            // Tambahkan event listener untuk dot
+            posterDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToPosterSlide(index);
+                });
+            });
+            
+            // Tambahkan event listener untuk tombol navigasi
+            if (posterPrevBtn) {
+                posterPrevBtn.addEventListener('click', () => {
+                    const prevPage = Math.max(Math.floor(posterCurrentSlide / visiblePosters) - 1, 0);
+                    goToPosterSlide(prevPage);
+                    console.log("Prev clicked");
+                });
+            }
+            
+            if (posterNextBtn) {
+                posterNextBtn.addEventListener('click', () => {
+                    const nextPage = Math.min(Math.floor(posterCurrentSlide / visiblePosters) + 1, totalPages - 1);
+                    goToPosterSlide(nextPage);
+                    console.log("Next clicked");
+                });
+            }
+            
+            // Handle swipe events
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            posterSlider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            posterSlider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                if (touchStartX - touchEndX > 50) {
+                    // Swipe left - next slide
+                    const nextPage = Math.min(Math.floor(posterCurrentSlide / visiblePosters) + 1, totalPages - 1);
+                    goToPosterSlide(nextPage);
+                } else if (touchEndX - touchStartX > 50) {
+                    // Swipe right - previous slide
+                    const prevPage = Math.max(Math.floor(posterCurrentSlide / visiblePosters) - 1, 0);
+                    goToPosterSlide(prevPage);
+                }
+            }
+            
+            // Detect scroll events untuk update dots dan counter
+            let isScrolling;
+            posterSlider.addEventListener('scroll', () => {
+                window.clearTimeout(isScrolling);
+                
+                isScrolling = setTimeout(() => {
+                    const scrollPosition = posterSlider.scrollLeft;
+                    const newSlideIndex = Math.round(scrollPosition / posterWidth);
+                    
+                    if (newSlideIndex !== posterCurrentSlide) {
+                        posterCurrentSlide = newSlideIndex;
+                        updatePosterDots();
+                        updateSlideCounter();
+                    }
+                }, 100);
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    const nextPage = Math.min(Math.floor(posterCurrentSlide / visiblePosters) + 1, totalPages - 1);
+                    goToPosterSlide(nextPage);
+                } else if (e.key === 'ArrowLeft') {
+                    const prevPage = Math.max(Math.floor(posterCurrentSlide / visiblePosters) - 1, 0);
+                    goToPosterSlide(prevPage);
+                }
+            });
+            
+            // Initialize
+            updatePosterDots();
+            updateSlideCounter();
+        });
+    </script>
+
+<!-- keempat -->
+    <style>
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .card-animate {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        .popular-badge {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Hide scrollbar but maintain functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Gradient backgrounds */
+        .gradient-mobile {
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+        }
+        .gradient-basic {
+            background: linear-gradient(135deg, #4F46E5 0%, #312E81 100%);
+        }
+        .gradient-standard {
+            background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%);
+        }
+        .gradient-premium {
+            background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+        }
+    </style>
+</head>
+        <div class="w-full max-w-6xl mx-auto shadow-blue">
+        <h1 class="text-center text-2xl mb-10 font-bold animate-[fadeIn_1s_ease]">choose a subscription plan</h1>
+        
+        <div class="flex justify-center gap-6 px-4 overflow-x-auto w-full no-scrollbar pb-4">
+            <!-- Mobile Plan -->
+            <div class="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-xl flex-shrink-0 card-animate card-hover" style="animation-delay: 0.1s">
+                <div class="gradient-mobile p-5 text-center">
+                    <div class="font-bold text-lg">Mobile</div>
+                    <div class="text-sm opacity-80">480p</div>
+                </div>
+                
+                <div class="p-5 space-y-4">
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Monthly price</div>
+                        <div class="font-medium">IDR 54,000</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Video and audio quality</div>
+                        <div class="font-medium">Fair</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Resolution</div>
+                        <div class="font-medium">480p</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Supported devices</div>
+                        <div class="font-medium">Mobile phone, tablet</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-xs text-gray-400 mb-1">Number of devices that can watch at the same time</div>
+                        <div class="font-medium">1</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Basic Plan -->
+            <div class="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-xl flex-shrink-0 card-animate card-hover" style="animation-delay: 0.2s">
+                <div class="gradient-basic p-5 text-center">
+                    <div class="font-bold text-lg">Basic</div>
+                    <div class="text-sm opacity-80">720p</div>
+                </div>
+                
+                <div class="p-5 space-y-4">
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Monthly price</div>
+                        <div class="font-medium">IDR 120,000</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Video and audio quality</div>
+                        <div class="font-medium">Good</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Resolution</div>
+                        <div class="font-medium">720p</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Supported devices</div>
+                        <div class="font-medium">Mobile phone, tablet, computer, TV</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-xs text-gray-400 mb-1">Number of devices that can watch at the same time</div>
+                        <div class="font-medium">2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Standard Plan -->
+            <div class="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-xl flex-shrink-0 card-animate card-hover" style="animation-delay: 0.3s">
+                <div class="gradient-standard p-5 text-center">
+                    <div class="font-bold text-lg">Standard</div>
+                    <div class="text-sm opacity-80">1080p</div>
+                </div>
+                
+                <div class="p-5 space-y-4">
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Monthly price</div>
+                        <div class="font-medium">IDR 153,000</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Video and audio quality</div>
+                        <div class="font-medium">Great</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Resolution</div>
+                        <div class="font-medium">1080p Full HD</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Supported devices</div>
+                        <div class="font-medium">Mobile phone, tablet, computer, TV</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-xs text-gray-400 mb-1">Number of devices that can watch at the same time</div>
+                        <div class="font-medium">4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Premium Plan -->
+            <div class="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-xl flex-shrink-0 card-animate card-hover relative" style="animation-delay: 0.4s">
+                <div class="absolute top-0 right-0 bg-red-600 text-xs px-3 py-1 font-bold popular-badge z-10 rounded-lg bg-card-">
+                    MOST POPULAR
+                </div>
+                
+                <div class="gradient-premium p-5 text-center">
+                    <div class="font-bold text-lg">Premium</div>
+                    <div class="text-sm opacity-80">4K + HDR</div>
+                </div>
+                
+                <div class="p-5 space-y-4">
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Monthly price</div>
+                        <div class="font-medium">IDR 186,000</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Video and audio quality</div>
+                        <div class="font-medium">Best</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Resolution</div>
+                        <div class="font-medium">4K Ultra HD + HDR</div>
+                    </div>
+                    
+                    <div class="border-b border-gray-700 pb-3 text-center">
+                        <div class="text-xs text-gray-400 mb-1">Supported devices</div>
+                        <div class="font-medium">Mobile phone, tablet, computer, TV</div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-xs text-gray-400 mb-1">Number of devices that can watch at the same time</div>
+                        <div class="font-medium">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Simple hover effect for mobile devices
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.addEventListener('touchstart', function() {
+                    this.style.transform = 'translateY(-8px)';
+                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.5)';
+                });
+                card.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = '';
+                    }, 300);
+                });
+            });
+        });
+    </script>
+
+<!-- kelima -->
+    <div class="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <h2 class="text-xl md:text-2xl mb-6">Let's connect to your device and enjoy the movie!</h2>
+        
+        <div class="relative flex justify-center items-center my-8 h-40">
+            <!-- Laptop -->
+            <div class="relative transform -rotate-12 mr-2">
+                <div class="w-24 h-20 bg-teal-400 border-2 border-white rounded"></div>
+                <div class="w-28 h-3 bg-gray-400 absolute -bottom-3 -left-2 rounded-b"></div>
+            </div>
+            
+            <!-- TV Screen -->
+            <div class="relative z-10">
+                <div class="w-40 h-24 bg-blue-200 border-2 border-blue-500 rounded"></div>
+                <div class="w-16 h-5 bg-blue-500 rounded-t absolute -bottom-5 left-1/2 transform -translate-x-1/2"></div>
+            </div>
+            
+            <!-- Phone -->
+            <div class="relative transform rotate-12 ml-2">
+                <div class="w-14 h-28 bg-indigo-100 border-2 border-indigo-500 rounded-xl"></div>
+                <div class="w-2 h-2 bg-indigo-500 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2"></div>
+                <div class="w-4 h-4 bg-indigo-500 rounded-full absolute bottom-2 left-1/2 transform -translate-x-1/2"></div>
+            </div>
+        </div>
+        
+        <button class="bg-gradient-to-br from-blue-700 to-red-900 hover:from-blue-900 hover:to-pink-500 text-white px-8 py-3 rounded-full flex items-center">
+            <a href="#sign Up">Sign up</a>
+        </button>
+    </div>
+    
+    <footer class="bg-blue-1000 p-4 border-t border-blue-900 shadow-white">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-center text-xl font-bold text-teal-400 mb-4 flex items-center justify-center">
+                <img src="Logo cgflix lagi 1.png" alt="">
+                <span class="text-white">flix</span>
+            </h1>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 text-sm">
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Deskripsi audio</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Assistance center</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Gift card</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Media center</a>
+                
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Investor relations</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Job vacancies</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">User requirements</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Privasi</a>
+                
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Legal information</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Cookie preferences</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">About us</a>
+                <a href="#" class="text-gray-400 hover:text-teal-400 transition">Contact us</a>
+            </div>
+
+            <br>
+            
+            <div class="flex justify-between items-center mt-4">
+                <div class="text-left">
+                  <span class="inline-block px-3 py-1 border border-gray-700 rounded text-xs text-gray-400">
+                    Bahasa Indonesia
+                  </span>
+                </div>
+                
+                <div class="flex justify-center gap-3">
+                  <a href="https://www.instagram.com/brigitha.__/?next=%2F" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white shadow-md hover:shadow-lg">
+                      <img src="instagram 1.png" alt="">
+                    </div>
+                  </a>
+
+                  <hr>
+                  
+                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110">
+                    <div class="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white shadow-md hover:shadow-lg">
+                        <img src="twitter 1.png" alt="">
+                    </div>
+                  </a>
+                  
+                  <a href="https://www.facebook.com/brigitha.paetricea" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-110">
+                    <div class="w-8 h-8  rounded-lg flex items-center justify-center shadow-md hover:shadow-lg">
+                     <img src="facebook-app-symbol 1 (1).png" alt="">
+                    </div>
+                  </a>
+                </div>
+        
+                <div class="invisible">
+                  <span class="inline-block px-3 py-1 border border-gray-700 rounded text-xs text-gray-400">
+                    Bahasa Indonesia
+                  </span>
+                </div>
+
+                <p class="font-bold mb-2">DOWNLOAD NOW</p>
+            <div class="flex justify-center gap-2">
+              <img src="Google Play Badge Logo - PNG Logo Vector Brand Downloads (SVG, EPS).jfif" alt="Google Play" class="h-8 transition duration-300 transform hover:scale-110 hover:brightness-110" />
+              <img src="aa.jfif" alt="App Store" class="h-8 transition duration-300 transform hover:scale-110 hover:brightness-110" />
+            </div>
+
+              </div>
+</body>
+</html>
